@@ -175,6 +175,14 @@ input, select, textarea {
 		margin-bottom: 2em;
 	}
 
+	svg {
+		height: 2em;
+	}
+
+	.hidden {
+		display: none;
+	}
+
 /* Container */
 
 	.container {
@@ -2084,9 +2092,11 @@ input, select, textarea {
 		#header h1 {
 			color: #252122;
 			font-weight: 900;
+			font-style: italic;
 			font-size: 2.5em;
 			letter-spacing: -0.035em;
 			line-height: 1;
+			font-family: 'Sarabun', sans-serif;
 		}
 
 /* Nav */
