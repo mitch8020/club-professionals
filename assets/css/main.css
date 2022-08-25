@@ -1967,20 +1967,20 @@ input, select, textarea {
 						background: #606060;
 					}
 
-				ul.social li a.fa-tumblr {
-					background: #2b4661;
+				ul.social li a.fa-twitch {
+					background: #8a42f2;
 				}
 
-					ul.social li a.fa-tumblr:hover {
-						background: #3b5671;
+					ul.social li a.fa-twitchr:hover {
+						background: #be96f9;
 					}
 
-				ul.social li a.fa-google-plus {
-					background: #da2713;
+				ul.social li a.fa-wordpress-simple {
+					background: #006e92;
 				}
 
-					ul.social li a.fa-google-plus:hover {
-						background: #ea3723;
+					ul.social li a.fa-wordpress-simple:hover {
+						background: #6eb7cf;
 					}
 
 /* Icons */
@@ -2070,6 +2070,14 @@ input, select, textarea {
 	}
 		
 		figure img {
+			width: 100%;
+		}
+
+		.container-iframe {
+			width: 100%;
+		}
+
+		.container-iframe iframe {
 			width: 100%;
 		}
 
