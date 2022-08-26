@@ -2081,6 +2081,14 @@ input, select, textarea {
 			width: 100%;
 		}
 
+		.profile-banner {
+			width: 100%;
+		}
+
+		.profile-banner img {
+			width: 100%;
+		}
+
 /* Page Wrapper */
 
 	#page-wrapper > section {
