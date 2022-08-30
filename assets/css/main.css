@@ -2208,36 +2208,64 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: #CCE8F4 url("../../images/pic01.jpg");
-		background-position: center center;
-		background-size: auto 100%;
-		background-repeat: no-repeat;
 		text-align: center;
 		position: relative;
 		padding: 8em 0;
-		margin: 4em 0 0 0;
+		width: 100%;
+		overflow: hidden;
 	}
 
-		#banner header {
+		#banner-container {
+			display: flex;
+			position: absolute;
+			width: 200%;
+		}
+
+		#banner-container div {
+			display: flex;
+			width: 50%;
+		}
+
+		#banner-container img {
+			width: 20%;
+		}
+
+		.banner-header header {
 			background-color: rgba(34, 30, 31, 0.98);
 			display: inline-block;
 			padding: 2.5em 5em;
 			border-radius: 5px;
 		}
 
-			#banner header h2 {
+			.banner-header header h2 {
 				color: #fff;
 				font-weight: 700;
 				font-size: 2.5em;
 				margin: 0 0 0.65em 0;
 			}
 
-			#banner header p {
+			.banner-header header p {
 				color: #d52349;
 				padding: 0;
 				font-style: normal;
 				margin: 0;
 				font-size: 1.5em;
+			}
+
+			@keyframes marquee {
+				0% {
+					left: 0;
+				}
+				100% {
+					left: -100%;
+				}
+			}
+
+			.animate {
+				width: 200%;
+				animation: marquee 25s linear infinite;
+				top: 15%;
+				transform: translate(0, 0);
 			}
 
 /* Intro */
@@ -2431,8 +2459,26 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				padding: 6em 0;
-				margin: 3em 0 0 0;
+				padding: 7em 0;
+			}
+
+			#banner-container {
+				width: 200%;
+			}
+	
+			#banner-container div {
+				width: 50%;
+			}
+	
+			#banner-container img {
+				width: 20%;
+			}
+
+			.animate {
+				width: 200%;
+				animation: marquee 25s linear infinite;
+				top: 15%;
+				transform: translate(0, 0);
 			}
 
 		/* Intro */
@@ -2518,6 +2564,29 @@ input, select, textarea {
 
 			#header {
 				padding: 3.5em 0 3em 0;
+			}
+
+		/* Banner */
+
+			#banner {
+				padding: 8em 0;
+			}
+
+			#banner-container {
+				width: 300%;
+			}
+
+			@keyframes marquee {
+				0% {
+					left: 0;
+				}
+				100% {
+					left: -150%;
+				}
+			}
+
+			.animate {
+				animation: marquee 25s linear infinite;
 			}
 
 		/* Nav */
@@ -2908,24 +2977,40 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				padding: 6em 0;
-				margin: 2em 0 0 0;
+				padding: 14em 0 0 0;
 			}
 
-				#banner header {
+				#banner-container header {
 					padding: 1.5em 1em 1.5em 1em;
 					display: block;
 					border-radius: 0;
 				}
 
-					#banner header h2 {
+					#banner-container header h2 {
 						font-size: 1.5em;
 						line-height: 1.5em;
 						margin: 0 0 0.25em 0;
 					}
 
-					#banner header p {
+					#banner-container header p {
 						font-size: 1.2em;
+					}
+
+					#banner-container {
+						width: 400%;
+					}
+		
+					@keyframes marquee {
+						0% {
+							left: 0;
+						}
+						100% {
+							left: -200%;
+						}
+					}
+		
+					.animate {
+						animation: marquee 30s linear infinite;
 					}
 
 		/* Main */
@@ -2940,4 +3025,32 @@ input, select, textarea {
 				padding: 40px 0 20px 0;
 			}
 
+	}
+
+/* XSmall */
+
+@media screen and (max-width: 450px) {
+
+	/* Banner */
+
+	#banner {
+		padding: 12em 0 0 0;
+	}
+
+		#banner-container {
+			width: 550%;
+		}
+
+		@keyframes marquee {
+			0% {
+				left: 0;
+			}
+			100% {
+				left: -275%;
+			}
+		}
+
+		.animate {
+			animation: marquee 40s linear infinite;
+		}
 	}
